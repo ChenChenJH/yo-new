@@ -1,0 +1,322 @@
+@import "~antd/lib/style/themes/default.less";
+
+.manager_div{
+	margin-top:40px;
+	margin-bottom:30px;
+}
+
+.list_div{
+	background:#eeeeee;
+	text-align:center;
+	padding-top:40px;
+}
+
+.manager_text h3{
+	font-weight:bold;
+	font-size:19px;
+}
+
+.manager_text label{
+	font-size:17px;
+}
+
+.custom_main_div{
+	text-align:center;
+	padding-top:40px;
+}
+
+.list_item_div{
+	width:1000px;
+	margin:0 auto;
+	display:flex;
+	flex-direction:row;
+}
+
+.manager_text{
+	margin-top:10px;
+	width:500px;
+	max-height:320px;
+	text-align:left;
+	vertical-align:middle;
+	padding:7% 30px;
+}
+
+.manager_img{
+	margin-top:10px;
+	width:500px;
+	max-height:320px;
+	text-align:left;
+	vertical-align:middle;
+	padding:0 30px;
+}
+
+.manager_img img{
+	width:94%;
+}
+
+/*当分辨率大于1000px选用下面的样式(企业级管理,多样营销,随时随地部分)  --start*/
+@media screen and (min-width:1000px){
+.manager_div img{
+	width:60%;
+}
+}
+/*当分辨率大于1000px选用下面的样式  --stop*/
+
+/*当分辨率为750px到1000px之间选用下面的样式(企业级管理,多样营销,随时随地部分)  --start*/
+@media screen and (min-width:750px) and (max-width:1000px){
+.manager_div img{
+	width:75%;
+}
+
+.list_item_div{
+	width:100%;
+}
+
+.manager_text{
+	width:50%;
+	padding:5% 40px;
+}
+
+.manager_img{
+	width:50%;
+	padding:0 40px;
+}
+}
+/*当分辨率为750px到1000px之间选用下面的样式  --stop*/
+
+/*当分辨率小于750px选用下面的样式(企业级管理,多样营销,随时随地部分)  --start*/
+@media screen and (max-width:750px){
+.manager_div img{
+	width:80%;
+}
+
+.list_item_div{
+	width:100%;
+	flex-direction:column;
+}
+
+.manager_text{
+	width:100%;
+	max-height:420px;
+	padding:0 30px;
+	order:1;
+}
+
+.manager_img{
+	width:100%;
+	max-height:590px;
+	order:2;
+	margin-bottom:30px;
+}
+}
+/*当分辨率小于790px选用下面的样式  --stop*/
+
+.custom_list{
+	width:100%;
+	max-width:1000px;
+	margin:0 auto;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+
+.customer_img{
+	width:20%;
+	min-width:180px;
+	max-width:200px;
+	height:180px;
+	padding:0 25px 30px;
+}
+
+.success_example_main{
+	border-bottom:3px dotted #D3D3D3;
+}
+
+.success_example_top{
+	width:100%;
+	max-width:1000px;
+	margin:30px auto;
+	display:flex;
+	flex-direction:row;
+	color:#666666;
+}
+
+.success_left_div img{
+	width:100%;
+}
+
+.success_example_bottom{
+	text-align:left;
+	width:100%;
+	max-width:1000px;
+	margin:0 auto;
+	padding:0 10px;
+	color:#17b07a;
+	margin-bottom:40px;
+}
+
+/*当分辨率大于1000px选用下面的样式(成功案例部分)  --start*/
+@media screen and (min-width:1000px){
+.success_left_div{
+	width:571.66px;
+	height:571.66px;
+	padding:10px;
+}
+.success_right_div{
+	text-align:left;
+	width:420px;
+	height:538px;
+	padding:10px;
+}
+}
+/*当分辨率大于1000px选用下面的样式  --stop*/
+
+/*当分辨率为750px到1000px之间选用下面的样式(成功案例部分)  --start*/
+@media screen and (min-width:750px) and (max-width:1000px){
+.success_example_top{
+	padding:0 10px 0;
+}
+
+.success_left_div{
+	width:57%;
+	padding:10px;
+}
+.success_right_div{
+	text-align:left;
+	width:43%;
+	padding:10px;
+}
+
+.success_example_bottom{
+	padding:0 10px 0 20px;
+}
+}
+/*当分辨率为750px到1000px之间选用下面的样式  --stop*/
+
+/*当分辨率为750px以下选用下面的样式(成功案例部分)  --start*/
+@media screen and (max-width:750px){
+.success_example_top{
+	margin:20px 0px ; 
+	padding:0 10px 0;
+	flex-direction:column;
+	text-align:left;
+}
+
+.success_left_div{
+	width:100%;
+	padding:10px;
+}
+
+.success_right_div{
+	text-align:left;
+	width:100%;
+	padding:10px;
+}
+.success_left_div img{
+	max-width:568px;
+}
+
+.success_example_bottom{
+	padding:0 20px;
+}
+}
+/*当分辨率为750px以下选用下面的样式  --stop*/
+
+.industry_list{
+	width:100%;
+	max-width:1000px;
+	margin:35px auto 0px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+/*当分辨率为750px以上选用下面的样式(支持大多数行业部分)  --start*/
+@media screen and (min-width:750px){
+.industry_item{
+	width:25%;
+	max-width:250px;
+	height:150px;
+	line-height:1;
+}
+}
+/*----当分辨率为750px以上选用下面的样式  --stop*/
+
+/*当分辨率为750px以下选用下面的样式(支持大多数行业部分)  --start*/
+@media screen and (max-width:750px){
+.industry_item{
+	width:50%;
+	height:150px;
+	line-height:1;
+}
+}
+/*-----当分辨率为750px以上选用下面的样式(支持大多数行业部分)  --stop*/
+
+.services_main{
+	width:100%;
+	height:311px;
+	background:#1e9fff;
+	color:#fafdff;
+}
+
+.service_content{
+	width:100%;
+	height:100%;
+	background: url('../../assets/images/bg_service.png') no-repeat center top;
+}
+
+.services_list{
+	width:100%;
+	max-width:1000px;
+	margin:35px auto 0px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+/*当分辨率为750px以上选用下面的样式(国内一流的服务部分)  --start*/
+@media screen and (min-width:750px){
+.services_item{
+	width:25%;
+	max-width:250px;
+	height:220px;
+}
+}
+/*当分辨率为750px以上选用下面的样式  --stop*/
+
+/*当分辨率为750px以下选用下面的样式(国内一流的服务部分)  --start*/
+@media screen and (max-width:750px){
+.services_main{
+	height:551px;
+}
+
+.services_list{
+	margin:20px auto 0px;
+}
+
+.services_item{
+	width:50%;
+	height:200px;
+	margin-top:20px;
+}
+}
+/*当分辨率为750px以下选用下面的样式  --stop*/
+
+
+/*自定义字体图标*/
+@font-face {
+  font-family: 'yopoint';
+  src: url('../../assets/font/yopoint.eot');
+  src: url('../../assets/font/yopoint.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font/yopoint.woff') format('woff'),
+  url('../../assets/font/yopoint.ttf') format('truetype'),
+  url('../../assets/font/yopoint.svg#iconfont') format('svg');
+}
+.icon_yp{
+  font-family:"yopoint" !important;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}

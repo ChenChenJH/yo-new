@@ -1,0 +1,69 @@
+
+body{
+	background:#eee;
+	color:#666;
+}
+
+.main_div{
+	width:100%;
+	max-width:600px;
+	background:white;
+	margin:0 auto;
+	padding-bottom:40px;
+}
+
+.title_div{
+	margin:20px 0 30px;
+}
+
+.title_t{
+	font-size:30px;
+	color:#0099dd;
+	margin-left:20px;
+	padding-bottom:10px;
+	border-bottom:4px solid #0099dd;
+}
+
+.my_form{
+	width:100%;
+	max-width:556px;
+	margin:0 auto;
+	padding:20px 30px;
+}
+
+.tip{
+	color: #ee7526;
+	text-align:center;
+	font-size:16px;
+}
+
+.form_group{
+	display:flex;
+  	flex-direction: row;
+  	margin-bottom:15px;
+}
+
+/*当分辨率小于530px选用下面的样式  --start*/
+@media screen and (max-width:530px){
+.form_group{
+  	flex-direction: column;
+}
+}
+/*当分辨率小于530px选用下面的样式  --stop*/
+
+.form_group div{
+	width:100%;
+	max-width:360px;
+}
+
+.form_group label{
+	width:128px;
+	height:38px;
+	font-size:16px;
+	font-weight:bold;
+	line-height:38px;
+}
+
+.form_group label span{
+	color:#ee7526;
+}

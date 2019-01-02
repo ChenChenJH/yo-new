@@ -1,0 +1,339 @@
+@import "~antd/lib/style/themes/default.less";
+.ant_layout{
+	overflow-x:visible!important;
+}
+
+.nav_div{
+	width:100%;
+	max-width:1090px;
+	margin:0 auto;
+}
+
+/*当分辨率大于1090px选用下面的样式(顶部导航部分)  --start*/
+@media screen and (min-width:1090px){
+.my_header{
+	line-height:64px;
+}
+
+.nav_div{
+	display:flex;
+	flex-direction:row;
+	padding-bottom:2px;
+	text-align:center;
+	font-weight:bold;
+}
+
+.nav_div img{
+	margin-right: 20px;
+	height: 40px;  
+	vertical-align: middle;
+}
+
+.change_menu{
+	display:none;
+}
+
+.my_menu{
+	width:50%;
+	max-width:541px;
+}
+
+.btn_group{
+	width:250px;
+}
+}
+/*当分辨率大于1090px选用下面的样式  --stop*/
+
+
+/*当分辨率小于1090px选用下面的样式(顶部导航部分)  --start*/
+@media screen and (max-width:1090px){
+.my_header{
+
+}
+.nav_div{
+	height:64px;
+	padding-bottom:2px;
+	padding-top:15px;
+}
+
+.log_div{
+	width:56px;
+	padding-left:10px;
+	overflow:hidden;
+	float:left;
+}
+
+.my_menu{
+	display:none;
+}
+
+.nav_div img{
+	height: 40px;  
+}
+
+.change_menu{
+	margin-right:10px;
+	float:right;
+}
+
+.lang_div{
+	float:right;
+	margin-right:5px;
+}
+
+.menu_list{
+	width:50px;
+	margin-right:10px;
+	float:left;
+	position:relative;
+}
+
+.menu_item{
+	z-index:2;
+	min-width:100px;
+	text-align:center;
+	background:#ffffff;
+	margin-top:10px;
+	display:none;
+	position:relative;
+	height:5px;
+}
+
+.menu_list:hover .menu_item{
+	display:block;
+}
+
+.menu_item ul{
+	list-style:none;
+	padding:5px 0px;
+	max-height:290px;
+	border:1px solid #D3D3D3;
+	background:#ffffff;
+}
+
+.menu_item ul li{
+	height:35px;
+	line-height:35px;
+	display:inline;
+	white-space:nowrap;
+}
+
+.menu_item ul li a{
+	color:black;
+	text-decoration:none;
+	display:block;
+}
+
+.menu_item ul li a:hover{
+	color:@primary-color;
+	background:#FFE4B5;
+}
+
+.btn_group{
+	display:none;
+}
+}
+/*当分辨率小于1090px选用下面的样式  --stop*/
+
+
+.my_footer{
+	background:#393d49;
+}
+
+.footer_content_right img{
+	width:160px;
+	height:160px;
+}
+
+.my_table{
+	font-size:16px;
+	text-align:left;
+}
+
+.icon_list{
+	display:flex;
+	flex-direction:row;
+	width:68%;
+}
+
+.copy_div{
+	width:100%;
+	background:#282828;
+}
+
+.copy_div a{
+	color:#A9A9A9;
+}
+
+/*当分辨率大于790px选用下面的样式(底部部分)  --start*/
+@media screen and (min-width:790px){
+.footer_content{
+	width:100%;
+	height:260px;
+	display:flex;
+	flex-direction:row;
+}
+
+.footer_content_left{
+	width:50%;
+	height:100%;
+	text-decoration:none;
+}
+
+.footer_content_right{
+	width:50%;
+	height:100%;
+	display:flex;
+	flex-direction:row;
+}
+
+.my_table{
+	width:68%;
+	height:75%;
+	margin-left:25%;
+}
+
+.icon_list{
+	margin-left:25%;
+}
+
+.mycode{
+	width:170px;
+	height:190px;
+	text-align:left;
+	background:'#696969';
+	margin-left: 15px;
+	margin-right: 30px;
+}
+
+.copy_div{
+	min-height:40px;
+	max-height:60px;
+	padding:10px 0;
+}
+}
+/*当分辨率大于790px选用下面的样式  --stop*/
+
+
+/*当分辨率为430px到790px之间选用下面的样式(底部部分)  --start*/
+@media screen and (min-width:430px) and (max-width:790px){
+.footer_content{
+	width:100%;
+	height:500px;
+}
+
+.footer_content_left{
+	width:100%;
+	height:50%;
+	text-decoration:none;
+	padding-left:15px;
+}
+
+.footer_content_right{
+	width:100%;
+	height:50%;
+	display:flex;
+	flex-direction:row;
+	background:#393d49;
+}
+
+.my_table{
+	width:70%;
+	height:75%;
+}
+
+.mycode{
+	width:167px;
+	height:230px;
+	text-align:left;
+	margin-left: 15px;
+	margin-right: 10%;
+}
+
+.copy_div{
+	max-height:90px;
+}
+
+.copy_div a{
+	display:block;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+}
+/*当分辨率为430px到790px之间选用下面的样式  --stop*/
+
+
+/*当分辨率小于等于430px选用下面的样式(底部部分)  --start*/
+@media screen and (max-width:430px){
+.footer_content{
+	width:100%;
+	height:500px;
+}
+
+.footer_content_left{
+	width:100%;
+	height:50%;
+	text-decoration:none;
+	padding-left:15px;
+}
+
+.footer_content_right{
+	width:100%;
+	height:50%;
+	display:flex;
+	flex-direction:row;
+	background:#393d49;
+}
+
+.footer_content_right img{
+	width:100%;
+	height:100%;
+	min-width:130.39px;
+	max-width:160px;
+	min-height:130.39px;
+	max-height:160px;
+}
+
+.my_table{
+	width:90%;
+	height:75%;
+}
+
+.mycode{
+	width:100%;
+	height:230px;
+	text-align:left;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+.copy_div{
+	max-height:110px;
+}
+.copy_div a{
+	display:block;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+}
+/*当分辨率小于等于430px选用下面的样式  --stop*/
+
+.icon_div{
+	width:36px;
+	height:36px;
+	border-radius:5px;
+	background:	#C0C0C0;
+	line-height:36px;
+}
+
+.icon_div:hover{
+	background:#00BFFF;
+}
+
+table td a{
+	color:white;
+}
+
+.copy_div label{
+	color:#F5F5F5;
+}

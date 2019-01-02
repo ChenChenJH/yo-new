@@ -1,0 +1,104 @@
+@import "~antd/lib/style/themes/default.less";
+.companyInfo{
+   background: white;
+   padding: 50px 0 60px;
+}
+
+.companyStyle{
+  width: 100%;
+  max-width: 1000px;
+  margin:0 auto;
+  padding-left:20px;
+  font-weight:500;
+  color:#666;
+}
+
+.companyAddressStyle {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bigTitleStyle {
+  color: @primary-color;
+  font-size: 30px;
+  padding-bottom: 5px;
+  border-bottom: 4px solid @primary-color;
+}
+
+.companyBoxStyle {
+  background: #eee;
+  padding: 50px 0 60px;
+}
+
+.companyNameTextStyle {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+.companyContactDivStyle {
+  font-size: 16px;
+  line-height:20px;
+}
+
+.companyTitleDivStyle {
+  font-size: 26px;
+  color: #ee7526;
+}
+
+.areaTextStyle {
+  display: inline-block;
+  line-height: 30px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  background: url(../../../public/icon_location.png) no-repeat center left;
+  background-size: auto 100%;
+  color: #ee7526;
+  font-size: 20px;
+}
+
+.companyAddressItemStyle {
+  margin-top: 30px;
+  width:25%;
+  padding:0 30px 0  0;
+}
+
+.companyItemStyle {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+/*当分辨率大于790px选用下面的样式  --start*/
+@media screen and (min-width:790px) {
+.companyContentDivStyle {
+  width: 90%;
+  max-width: 880px;
+  font-size: 16px;
+  padding:5px 20px 0 20px;
+}
+}
+/*当分辨率大于790px选用下面的样式   --stop*/
+
+
+/*当分辨率小于790px选用下面的样式  --start*/
+@media screen and (max-width:790px){
+.companyAddressItemStyle {
+  width:50%;
+}
+
+.companyItemStyle {
+  flex-direction: column;
+}
+
+.companyContentDivStyle {
+  width: 100%;
+  font-size: 16px;
+  padding:5px 30px 0 20px;
+}
+}
+/*当分辨率小于790px选用下面的样式   --stop*/

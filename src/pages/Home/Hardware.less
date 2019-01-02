@@ -1,0 +1,174 @@
+@import "~antd/lib/style/themes/default.less";
+.white_container{
+  background:white;
+  padding:30px 10px 40px;
+}
+
+.gray_container{
+  background:#eee;
+  padding:30px 10px 40px;
+}
+
+.main_div{
+  width:100%;
+  max-width:1000px;
+  margin:0 auto;
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+.img_div img{
+  max-width:90%;
+  max-height: 332px;
+}
+
+.context_img{
+  width:120px;
+  margin:0 auto;
+}
+
+.context_img img{
+  width:100%;
+}
+
+.item_div{
+  width:70%;
+  text-align:left;
+  margin-top:10px;
+  display:inline-block;
+}
+
+.bottom_img{
+ 
+}
+.bottom_img img{
+  max-width:90%;
+  max-height: 230px;
+}
+
+
+/*当分辨率大于750px选用下面的样式  --start*/
+@media screen and (min-width:750px){
+.main_context{
+  width:66.6%;
+  text-align:center;
+  padding-top:40px;
+}
+
+.img_div{
+  width:33.3%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:15px;
+}
+
+.bottom_main{
+  width:50%;
+  text-align:center;
+  padding-top:40px;
+}
+}
+/*当分辨率大于750px选用下面的样式  --stop*/
+
+
+/*当分辨率小于750px选用下面的样式  --start*/
+@media screen and (max-width:750px){
+.main_context{
+  width:100%;
+  text-align:center;
+  order:2;
+  padding-top:30px;
+}
+
+.img_div{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  order:1;
+  padding-top:10px;
+}
+
+.bottom_main{
+  width:100%;
+  text-align:center;
+  padding-top:30px;
+}
+}
+/*当分辨率小于750px选用下面的样式  --stop*/
+
+.main_context span, .bottom_main span{
+  font-size: 24px;
+  font-weight: bold;
+  color: @primary-color;
+}
+
+.main_context p, .bottom_main p{
+  font-size: large;
+  color: @primary-color;
+}
+
+.item_div ul{
+  width: 100%;
+  max-width:400px;
+  padding-top: 80px;
+  padding-left: 0px;
+  font-size: 0;
+  word-break: break-all;
+  background: url(../../../public/icon_hardware.png) no-repeat left 8px;
+  background-size: 100% auto;
+}
+
+.item_div ul li{
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  font-size: 16px;
+  text-align: center;
+  list-style: none;
+}
+
+.flexColumnGrayStyle,.main_context a{
+  text-decoration:none;
+  margin:0 auto;
+}
+
+.main_context a:hover,.flexColumnGrayStyle a:hover{
+  opacity:0.9;
+}
+
+.buyContactButton {
+  margin-top: 15px;
+  width: 191px;
+  background: #ee7526;
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+  border-radius: 60px;
+  color: #fff;
+  display: inline-block;
+  text-align:center;
+}
+
+.flexColumnGrayStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+}
+
+.functionTitleStyle {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #282828;
+  font-weight: 600;
+}
+
+.functionDetailStyle {
+  font-size: 16px;
+  color: gray;
+}

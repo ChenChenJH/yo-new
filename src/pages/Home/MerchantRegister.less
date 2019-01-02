@@ -1,0 +1,82 @@
+@import "~antd/lib/style/themes/default.less";
+.topDivStyle {
+  text-align: center;
+  background: #09d;
+  padding-top:40px;
+}
+
+.topImg{
+  width:100%;
+  max-width:1000px;
+  margin:0 auto;
+}
+.topImg img{
+  max-width: 100%;
+  max-height: 300px;
+}
+
+.registerBoxStyle {
+  width:100%;
+  max-width:1000px;
+  margin: 60px auto;
+  padding-left:20px;
+}
+
+.registTitleStyle {
+  font-size: 30px;
+  color: @primary-color;
+  border-bottom:4px solid @primary-color;
+}
+
+.registTipStyle {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ee7526;
+  text-align: center;
+}
+
+.shopDivBox {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+.registTypeBoxStyle {
+  margin-top: 20px;
+  width:50%;
+  min-width:280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*当分辨率小于750px选用下面的样式  --start*/
+@media screen and (max-width:750px){
+.shopDivBox {
+  flex-direction: column;
+}
+
+.registTypeBoxStyle {
+  width:100%;
+}
+}
+/*当分辨率小于750px选用下面的样式  --stop*/
+
+.shopIconStyle {
+  width: auto;
+  height: 176px;
+}
+
+.shopContentBoxStyle {
+  margin-top: 20px;
+  width: 232px;
+  height: 78px;
+  background: #ee7526;
+  border-radius: 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}

@@ -1,0 +1,83 @@
+.my_container{
+  width:100%;
+  background:#eeeeee;
+  border-top:2px solid #0099dd;
+  padding:0 20px;
+}
+
+.quetionBoxDivStyle {
+  width:100%;
+  max-width:990px;
+  padding: 25px;
+  margin: 30px auto;
+  background: white;
+}
+
+.startTitle {
+  margin: 10px 10px 25px;
+  border-top: 1px solid #e2e2e2;
+  position: relative;
+}
+
+.legend {
+  display: block;
+  margin-left: 20px;
+  padding: 0 10px;
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  bottom: -14px;
+  background: white;
+}
+
+.questionItemDivStyle{
+   padding:2px 5px;
+}
+
+.questionTitleStyle {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+  font-weight:bold;
+
+}
+
+.questionDetailStyle {
+  font-size: 14px;
+  color: gray;
+  font-weight: 500;
+}
+
+.tableBoxStyle {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-weight: 500;
+}
+
+/*当分辨率大于750px选用下面的样式  --start*/
+@media screen and (min-width:750px){
+.tableItemDivStyle {
+  width: 33.3%;
+  padding:5px 10px 5px 5px;
+}
+}
+/*当分辨率大于750px选用下面的样式  --stop*/
+
+
+/*当分辨率小于750px选用下面的样式  --start*/
+@media screen and (max-width:750px) {
+.tableBoxStyle {
+  flex-direction: column;
+}
+
+.questionItemDivStyle{
+  padding:0px;
+}
+
+.tableItemDivStyle {
+  width: 100%;
+}
+}
+/*当分辨率小于750px选用下面的样式 --stop*/
